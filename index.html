@@ -1,1 +1,62 @@
-<meta http-equiv="Refresh" content="0; url=https://www.facebook.com/the3sistersshoppe/" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The 3 Sisters Shoppe</title>
+    <meta http-equiv="Refresh" content="20; url=https://www.facebook.com/the3sistersshoppe/" />
+
+    <style>
+        #title-img {
+            margin-top: 1em;
+            text-align: center;
+        }
+
+        #text {
+            margin-top: 1em;
+            text-align: center;
+            font-family: 'Manrope', sans-serif;
+        }
+
+        #time {
+            font-weight: bold;
+        }
+
+        #img {
+            width: 55rem;
+        }
+
+        @media only screen and (max-width: 950px) {
+            #img {
+                width: 30rem;
+            }
+        }
+
+        @media only screen and (max-width: 500px) {
+            #img {
+                width: 20rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="title-img">
+        <img src="logo.png" id="img" alt="The 3 Sisters Shoppe Logo">
+    </div>
+
+    <div id="text">
+        <p>
+            Redirecting you to the 3 Sisters Shoppe in <span id="time">20</span> secconds. Or you can <a href="https://www.facebook.com/the3sistersshoppe/"> go now.</a>
+        </p>
+    </div>
+</body>
+<script>
+    var countdown = 20;
+
+    var interval = setInterval(function() {
+        document.getElementById("time").innerHTML = countdown
+        countdown--;
+    }, 1000)
+</script>
+</html>
